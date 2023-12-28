@@ -1,0 +1,6 @@
+# requirements.txt
+# CSV handling
+csvkit==1.0.6
+# Regular expressions
+regex==2021.11.2
+# System-specific parameters and functions
