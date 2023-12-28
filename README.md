@@ -20,6 +20,11 @@ The Amass-Log-to-CSV tool is a Python script designed to transform the output fr
 
 3. The script will create an output CSV file with the same name as the input log file, but with the `.csv` extension. For example, if the input file is `anir0y.log`, the output file will be `anir0y.csv`.
 
+4. IF you just want domain names
+   ```bash
+   cat anir0y.log | grep a_record| awk -F ' ' '{print $1}'  | sort | uniq | tee tmp.log
+   ```
+
 ## Requirements
 
 Ensure you have the required Python packages installed by running the following command:
