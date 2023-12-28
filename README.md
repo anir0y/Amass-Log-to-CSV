@@ -24,6 +24,11 @@ The Amass-Log-to-CSV tool is a Python script designed to transform the output fr
    ```bash
    cat anir0y.log | grep a_record| awk -F ' ' '{print $1}'  | sort | uniq | tee tmp.log
    ```
+   **After that**
+
+   ```bash
+   python3 amass-log-to-csv.py tmp.log
+   ```
 
 ## Requirements
 
